@@ -7,7 +7,7 @@ body {
   background:#EDEDED;
 }
 .intro {
-  margin: 50px 0;
+  margin: 50px 0 0;
 }
   .intro h1 {
     text-align: center;
@@ -27,9 +27,11 @@ body {
 }
   #logo p {
     text-align: center;
-
   }
-
+  #logo a#logoLink {
+    color:#000;
+    cursor: default;
+  }
 
 .firstSection {
   padding-top: 75px;
