@@ -1,0 +1,55 @@
+html, body {
+  background:url(../img/blur.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  min-height: 100%
+  margin: 0;
+}
+p {
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#bigText {
+  font: 100 60px/100% 'Helvetica Neue', Helvetica, sans-serif;
+  color:#fff;
+  width: 275px;
+  height: 65px;
+  bottom: 15%;
+}
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+}
+  footer p {
+    font: 100 20px/100% 'Helvetica Neue', sans-serif;
+    letter-spacing: 2px;
+    width: 30px;
+    height: 22px;
+  }
+  a#logoLink {
+    color:#fff;
+    cursor: default;
+  }
+  footer div {
+    width: 80%;
+    border-top: 1px solid #fff;
+    height: 100%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
