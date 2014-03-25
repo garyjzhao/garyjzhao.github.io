@@ -20,9 +20,10 @@ p {
 #bigText {
   font: 100 60px/100% 'Helvetica Neue', Helvetica, sans-serif;
   color:#fff;
-  width: 275px;
+  width: 340px;
   height: 65px;
   bottom: 15%;
+  text-align: center;
 }
 footer {
   position: absolute;
