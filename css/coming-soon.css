@@ -1,3 +1,14 @@
+::-moz-selection {
+  color:#fff;
+  background:rgba(0,0,0,0.1);
+  text-shadow: 0 1px 5px #000;
+}
+::selection {
+  color:#fff;
+  background:rgba(0,0,0,0.1);
+  text-shadow: 0 1px 5px #000;
+}
+
 html, body {
   background:url(../img/blur.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
