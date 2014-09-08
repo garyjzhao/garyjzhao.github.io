@@ -2,9 +2,138 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/dev-styles.css">
+
+    <script src="js/vendor/modernizr.js"></script>
     <title>Gary Zhao's Development</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+
+    <div class="test">
+        <p class="show-for-small-only">S</p>
+        <p class="show-for-medium-only">M</p>
+        <p class="show-for-large-only">L</p>
+    </div>
+    <div class="test" id="offset" style="top:25px;">
+
+    </div>
+    <header class="container" id="header">
+        <div class="row">
+            <div class="small-12 columns">
+                    <div class="name">
+                            <h1
+                            data-anchor-target="#header"
+                            data--200-top="opacity: 1;"
+                            data--275-top="opacity: 0;"
+                            >Gary Zhao</h1>
+                    </div>
+            </div>
+        </div>
+
+    </header>
+    <section class="profile">
+        <div class="row">
+            <div class="small-12 columns">
+                <div id="picture"></div>
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas earum, quia ex illum alias rem, ullam quidem fugiat vero repudiandae atque, qui! Molestiae, quaerat, velit.
+                    </p>
+                </div>
+            </div>
+            <div class="small-6 columns">
+                <div class="pill">
+                    <p>Resume</p>
+                </div>
+            </div>
+            <div class="small-6 columns">
+                <div class="pill">
+                    <p>Contact</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="work">
+        <div class="row">
+            <div class="small-12 columns">
+                <div class="img">
+                </div>
+                <div class="desc">
+                    <h2>USS Foundation</h2>
+                    <h3><em>http://www.ussfoundation.org</em></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolore eligendi iure similique quisquam quod, incidunt, tempora doloribus natus consequuntur! Omnis at aut, alias nesciunt.</p>
+                </div>
+            </div>
+            <div class="small-12 columns">
+                <div class="img">
+                </div>
+                <div class="desc">
+                    <h2>USS Foundation</h2>
+                    <h3><em>http://www.ussfoundation.org</em></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolore eligendi iure similique quisquam quod, incidunt, tempora doloribus natus consequuntur! Omnis at aut, alias nesciunt.</p>
+                </div>
+            </div>
+            <div class="small-12 columns">
+                <div class="img">
+                </div>
+                <div class="desc">
+                    <h2>USS Foundation</h2>
+                    <h3><em>http://www.ussfoundation.org</em></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolore eligendi iure similique quisquam quod, incidunt, tempora doloribus natus consequuntur! Omnis at aut, alias nesciunt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact-circles">
+        <div class="row">
+            <div class="small-4 columns">
+                <div class="circle"></div>
+            </div>
+            <div class="small-4 columns">
+                <div class="circle"></div>
+            </div>
+            <div class="small-4 columns">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="small-12 columns">
+                <p>Copyright 2014</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="row" style="display: none;">
+        <div class="small-12 columns">
+            <h3>Filler Text</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sunt accusantium unde nesciunt esse, ea, repellat recusandae cum earum autem facilis provident, ducimus aliquid ullam! Repellat iure, fugit quibusdam recusandae quis dignissimos debitis dolor accusamus, adipisci sed reiciendis quos possimus et quidem corporis? Voluptatem quidem maxime dolor quis autem placeat soluta ducimus ullam a, dicta rem debitis natus, quae corporis officia nihil nobis dolorem, error tempora, atque possimus iure similique! Accusantium minima quam, labore quidem aliquam laboriosam atque culpa impedit error autem fugiat consequatur eaque id magni fugit, dignissimos cupiditate doloribus quasi quod esse voluptatum excepturi accusamus ea explicabo! Provident.</p>
+        </div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
+    <script>
+        $(document).foundation();
+        var s = skrollr.init({
+            render: function(data) {
+                //Log the current scroll position.
+                //console.log(data.curTop);
+                $('#offset').text(data.curTop);
+            }
+        });
+    </script>
 </body>
 </html>
