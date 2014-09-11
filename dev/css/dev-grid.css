@@ -2,3 +2,16 @@
     border: 1px solid #000;
     height: 250px;
 }
+
+header {
+    background:url(../img/workspace.jpg) no-repeat center -250px fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+#test {
+    background:#fff;
+}

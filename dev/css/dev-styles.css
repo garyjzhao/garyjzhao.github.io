@@ -1,3 +1,8 @@
+/*
+Bluring the background on scroll: http://codepen.io/sallar/pen/lobfp;
+
+ */
+
 @import url(museo-sans/stylesheet.css);
 
 body {
@@ -16,9 +21,13 @@ body {
 header {
     text-align: center;
     height: 500px;
-    background:url(../img/pattern.png) repeat #ccc;
-}
+    background:url(../img/workspace.jpg) no-repeat center -250px fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
+}
 
 header .name {
 }
