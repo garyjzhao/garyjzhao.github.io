@@ -18,15 +18,18 @@ body {
 /* ===============
         Header Section
  =============== */
-header {
+
+#header {
     height: 500px;
     background:url(../img/workspace-b.jpg) no-repeat center -250px fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    position: absolute;
+    width: 100%;
 }
-.bg2 {
+#bg2 {
     height: inherit;
     background:url(../img/workspace.jpg) no-repeat center -250px fixed;
     -webkit-background-size: cover;
@@ -49,6 +52,7 @@ header {
     }
     #secondh1 {
         color:#fff;
+        margin: 0;
         padding: 200px 0 0;
         text-align: center;
     }
