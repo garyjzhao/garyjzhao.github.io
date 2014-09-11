@@ -4,14 +4,42 @@
 }
 
 header {
+    height: 450px;
+    background:url(../img/workspace-b.jpg) no-repeat center -250px fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+.bg2 {
+    height: inherit;
     background:url(../img/workspace.jpg) no-repeat center -250px fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
 }
+.name {
+    height: 500px;
+}
+     #firsth1 {
+        margin: 0;
+        color:#fff;
+        padding: 0;
+        position: fixed;
+        left: 50%;
+        top:53px;
+        margin-left: -103px;
+    }
+    #secondh1 {
+        color:#fff;
+        padding: 200px 0 0;
+        text-align: center;
 
-#test {
-    background:#fff;
+    }
+/**/
+
+.misc {
+    height: 750px;
 }

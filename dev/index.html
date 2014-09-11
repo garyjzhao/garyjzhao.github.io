@@ -12,38 +12,27 @@
     <title>Gary Zhao's Development</title>
 </head>
 <body>
-    <div id="skrollr-body">
     <div class="test">
         <p class="show-for-small-only">S</p>
         <p class="show-for-medium-only">M</p>
         <p class="show-for-large-only">L</p>
     </div>
     <div class="test" id="offset" style="top:25px;"></div>
-<!--     <header class="container show-for-small-only">
-        <div class="row">
-            <div class="small-12 columns">
-                <div class="name">
-                    <h1>Gary Zhao</h1>
-                </div>
-            </div>
-        </div>
-    </header> -->
 
-    <header class="">
-
-        <div class="row">
-            <div class="small-12 columns">
-                    <div class="name">
-                            <h1
-                            data-anchor-target="header"
-                            data--200-top="opacity: 1;"
-                            data--275-top="opacity: 0;"
-                            >Gary Zhao</h1>
-                    </div>
-            </div>
-        </div>
+    <header id="header" style="position: absolute;width: 100%;">
+        <div class="bg2" data-anchor-targer="#header" data-top="opacity:1;" data--100-top="opacity:0;" ></div>
     </header>
+    <div class="row">
+        <div class="small-12 columns">
+            <div class="name">
+                <h1 id="firsth1" data-anchor-target="#header" data--149-top="opacity:0;" data--150-top="opacity:1;" data--250-top="opacity:1;" data--350-top="opacity: 0;">Gary Zhao</h1>
+                <h1 id="secondh1" data-anchor-target="#header" data-top="opacity:1" data--149-top="opacity:1;" data--150-top="opacity:0;">Gary Zhao</h1>
+            </div>
+        </div>
+    </div>
 
+
+<div id="skrollr-body">
 
     <section class="profile">
         <div class="row">
@@ -132,6 +121,7 @@
         </div>
     </div>
 
+</div>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script type="text/javascript" src="js/skrollr.min.js"></script>
@@ -139,12 +129,9 @@
         $(document).foundation();
         var s = skrollr.init({
             render: function(data) {
-                //Log the current scroll position.
-                //console.log(data.curTop);
                 $('#offset').text(data.curTop);
             }
         });
     </script>
-    </div>
 </body>
 </html>

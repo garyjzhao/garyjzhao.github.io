@@ -13,24 +13,48 @@
     <title>Grid System</title>
 </head>
 <body>
-<!--
-<div class="background">
-   <img src="img/workspace.jpg">
-</div> -->
-    <header>
-    <div class="box" style="height:450px;"></div>
-    </header>
-    <div>
-        <img src="img/workspace.jpg" height="720" width="1080" alt="">
-    </div>
+<div class="test" id="offset"></div>
 
+    <header id="header" style="position:absolute;width:100%">
+        <div class="bg2"
+        data-anchor-targer="#header"
+        data-top="opacity:1;"
+        data--100-top="opacity:0;"
+        ></div>
+    </header>
+    <div class="container">
+                <div class="row">
+                    <div class="small-12 columns">
+                        <div class="name">
+                            <h1 id="firsth1" data-anchor-target="#header" data--149-top="opacity:0;" data--150-top="opacity:1;" data--250-top="opacity:1;" data--300-top="opacity: 0;">Gary Zhao</h1>
+                            <h1 id="secondh1" data-anchor-target="#header" data-top="opacity:1" data--149-top="opacity:1;" data--150-top="opacity:0;">Gary Zhao</h1>
+                        </div>
+                    </div>
+                </div>
+        <div class="row">
+            <div class="small-12 columns">
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-12 columns">
+                <div class="misc"></div>
+            </div>
+        </div>
+    </div>
 
 
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
     <script>
         $(document).foundation();
+        var s = skrollr.init({
+            render: function(data) {
+                $('#offset').text(data.curTop);
+            }
+        });
     </script>
 </body>
 </html>
