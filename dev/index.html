@@ -139,13 +139,7 @@
     <script type="text/javascript" src="js/skrollr.min.js"></script>
     <script>
         $(document).foundation();
-        var s = skrollr.init({
-            render: function(data) {
-                //Log the current scroll position.
-                //console.log(data.curTop);
-                $('#offset').text(data.curTop);
-            }
-        });
+        var s = skrollr.init();
     </script>
 </body>
 </html>
