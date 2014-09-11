@@ -12,16 +12,14 @@
     <title>Gary Zhao's Development</title>
 </head>
 <body>
-
+    <div id="skrollr-body">
     <div class="test">
         <p class="show-for-small-only">S</p>
         <p class="show-for-medium-only">M</p>
         <p class="show-for-large-only">L</p>
     </div>
-    <!-- <div class="test" id="offset" style="top:25px;"> -->
-
-    </div>
-    <header class="container show-for-small-only">
+    <div class="test" id="offset" style="top:25px;"></div>
+<!--     <header class="container show-for-small-only">
         <div class="row">
             <div class="small-12 columns">
                 <div class="name">
@@ -29,9 +27,9 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
 
-    <header class="container show-for-medium-up">
+    <header class="">
 
         <div class="row">
             <div class="small-12 columns">
@@ -139,7 +137,14 @@
     <script type="text/javascript" src="js/skrollr.min.js"></script>
     <script>
         $(document).foundation();
-        var s = skrollr.init();
+        var s = skrollr.init({
+            render: function(data) {
+                //Log the current scroll position.
+                //console.log(data.curTop);
+                $('#offset').text(data.curTop);
+            }
+        });
     </script>
+    </div>
 </body>
 </html>
