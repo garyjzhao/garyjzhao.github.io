@@ -127,10 +127,9 @@
     <script>
         $(document).foundation();
         var s = skrollr.init({
-            forceHeight: false
-            // render: function(data) {
-            //     $('#offset').text(data.curTop);
-            // }
+            render: function(data) {
+                $('#offset').text(data.curTop);
+            }
         });
     </script>
 </body>
