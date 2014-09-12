@@ -97,7 +97,7 @@
     </section>
 
 
-    <section class="contact-circles">
+    <section class="contact-circles" style="display: none;">
         <div class="row">
             <div class="small-4 columns">
                 <div class="circle"></div>
@@ -127,9 +127,10 @@
     <script>
         $(document).foundation();
         var s = skrollr.init({
-            render: function(data) {
-                $('#offset').text(data.curTop);
-            }
+            forceHeight: false
+            // render: function(data) {
+            //     $('#offset').text(data.curTop);
+            // }
         });
     </script>
 </body>

@@ -95,7 +95,9 @@ body {
 /* ===============
         Work Section
  =============== */
- .work {}
+ .work {
+    background:#fff;
+ }
     .work .img {
         border: 1px solid #000;
         height: 250px;
