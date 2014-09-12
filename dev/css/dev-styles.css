@@ -15,6 +15,7 @@ body {
 
 
 
+
 /* ===============
         Header Section
  =============== */
@@ -29,7 +30,7 @@ body {
     position: absolute;
     width: 100%;
 }
-#bg2 {
+.bg2 {
     height: inherit;
     background:url(../img/workspace.jpg) no-repeat center -250px fixed;
     -webkit-background-size: cover;
@@ -37,6 +38,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+
 
 .name {
     height: 500px;
@@ -125,3 +127,27 @@ body {
     text-align: center;
     margin: 0;
  }
+
+
+
+/* ===============
+        Small Screens
+ =============== */
+
+@media only screen and (max-width: 40em) {
+
+/* ======================
+        Small Screens  - Header
+ ======================= */
+
+    .bg2 {
+        height: 450px;
+        background-position-y: -150px;
+    }
+        .bg2 h1 {
+            margin: 0;
+            padding: 200px 0 0;
+            color:#fff;
+            text-align: center;
+        }
+}
