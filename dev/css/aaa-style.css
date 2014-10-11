@@ -1,0 +1,93 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Stalemate);
+
+h2 {
+    font-family: 'Stalemate', serif;
+    text-align: center;
+    font-size: 90px;
+}
+h3 {
+    font-family: 'Roboto Slab', serif;
+}
+/*===============================
+        Slider Properties
+===============================*/
+#slider {
+    position: relative;
+}
+.arrow {
+    border-top:5px solid #666;
+    border-left:5px solid #666;
+    width: 50px;
+    height: 50px;
+    cursor:pointer;
+    opacity:0.4;
+} .arrow:hover {
+    opacity:0.7;
+}
+#next-btn, #prev-btn {
+    position: absolute;
+    top:50%;
+    z-index:2;
+}
+#prev-btn {
+    left:10px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+#next-btn {
+    right:10px;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+
+
+.macbook {height: 100%;}
+.macbook > img {
+    margin: 0 auto;
+    display: block;
+}
+.work {
+    background:url(../img/background.png);
+}
+.bx-wrapper .bx-viewport {
+    background:0;
+    border:0;
+}
+#strikethru {
+    border-top: 1px solid black;
+    height: 25px;
+    position: relative;
+    margin-top: 25px;
+}
+#strikethru > p {
+    text-align: center;
+    width: 150px;
+    margin-left: -75px;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    background:white;
+}
+
+/*===============================
+        Media Queries: Small Screens
+===============================*/
+
+@media only screen and (max-width: 40em) {
+    .arrow {
+        width: 25px;
+        height: 25px;
+    }
+    #next-btn, #prev-btn {
+        top:30%;
+    }
+    .description {
+        padding: 10px;
+    }
+}
