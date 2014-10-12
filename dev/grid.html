@@ -14,36 +14,31 @@
 </head>
 <body>
 <div class="test" id="offset"></div>
-
-    <header id="header" style="position:absolute;width:100%">
-        <div class="bg2"
-        data-anchor-targer="#header"
-        data-top="opacity:1;"
-        data--100-top="opacity:0;"
-        ></div>
+    <header>
+        <div class="headerBG-b" id="headerBG-b">
+            <div class="headerBG"
+            data-anchor-target="#headerBG-b"
+            data-top="opacity:1"
+            data--200-top="opacity:0"
+            ></div>
+        </div>
     </header>
-    <div class="container">
-                <div class="row">
-                    <div class="small-12 columns">
-                        <div class="name">
-                            <h1 id="firsth1" data-anchor-target="#header" data--149-top="opacity:0;" data--150-top="opacity:1;" data--250-top="opacity:1;" data--300-top="opacity: 0;">Gary Zhao</h1>
-                            <h1 id="secondh1" data-anchor-target="#header" data-top="opacity:1" data--149-top="opacity:1;" data--150-top="opacity:0;">Gary Zhao</h1>
-                        </div>
-                    </div>
+<div id="skrollr-body">
+        <div class="row">
+            <div class="small-12 columns">
+                <h1 id="gary"
+                data-anchor-target="#headerBG-b"
+                data-top="opacity:1"
+                data--200-top="opacity:0"
+                >Gary</h1>
+                <div class="box">
+                    <h2>this is the header</h2>
                 </div>
-        <div class="row">
-            <div class="small-12 columns">
-                <div class="box"></div>
             </div>
         </div>
-        <div class="row">
-            <div class="small-12 columns">
-                <div class="misc"></div>
-            </div>
-        </div>
-    </div>
-
-
+    <!-- </header> -->
+    <div class="misc"></div>
+</div>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>

@@ -10,6 +10,24 @@ h3 {
     font-family: 'Roboto Slab', serif;
 }
 /*===============================
+        Hero Properties
+===============================*/
+.hero {
+    height: 500px;
+    background:#333;
+    background:url(../img/07.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+}
+.hero p {
+    font-family: 'Stalemate', serif;
+    font-size: 150px;
+    text-align: center;
+    margin: 100px 0 0;
+    color:#fff;
+}
+
+/*===============================
         Slider Properties
 ===============================*/
 #slider {
@@ -45,8 +63,6 @@ h3 {
     transform: rotate(135deg);
 }
 
-
-
 .macbook {height: 100%;}
 .macbook > img {
     margin: 0 auto;
@@ -59,6 +75,11 @@ h3 {
     background:0;
     border:0;
 }
+
+.clickable, .description {
+    margin-top: 15px;
+}
+
 #strikethru {
     border-top: 1px solid black;
     height: 25px;
@@ -66,13 +87,13 @@ h3 {
     margin-top: 25px;
 }
 #strikethru > p {
-    text-align: center;
     width: 150px;
     margin-left: -75px;
+    text-align: center;
     position: absolute;
     top: -50%;
     left: 50%;
-    background:white;
+    background: white;
 }
 
 /*===============================
@@ -89,5 +110,8 @@ h3 {
     }
     .description {
         padding: 10px;
+    }
+    .clickable {
+        margin-top: 0;
     }
 }

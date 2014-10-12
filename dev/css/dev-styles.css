@@ -30,14 +30,14 @@ body {
     position: absolute;
     width: 100%;
 }
-.bg2 {
-    height: inherit;
-    background:url(../img/workspace.jpg) no-repeat center -250px fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
+   #header .bg2 {
+        height: inherit;
+        background:url(../img/workspace.jpg) no-repeat center -250px fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 
 
 .name {
