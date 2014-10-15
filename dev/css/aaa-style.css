@@ -150,6 +150,9 @@ h3 {
     .description {
         padding: 10px;
     }
+    .description h3 {
+        font-size:1.6875rem;
+    }
     .clickable {
         margin-top: 0;
     }
