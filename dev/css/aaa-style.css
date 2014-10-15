@@ -10,9 +10,7 @@ h2 {
 h3 {
     font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, sans-serif;
 }
-/*body{
-    font-family: 'Muli', 'Helvetica Neue', Helvetica, sans-serif;
-}*/
+
 /*===============================
         Hero Properties
 ===============================*/
@@ -21,13 +19,10 @@ h3 {
 .hero {
     height: 500px;
     background:#fefefe;
-    /*background:url(../img/07.jpg);*/
-    background-size:cover;
-    background-attachment: fixed;
 }
 .hero h1 {
     font-family: 'Muli', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 150px;
+    font-size: 100px;
     line-height: 150px;
     text-align: center;
     margin: 100px 0 0;
@@ -35,7 +30,7 @@ h3 {
 }
 .hero p {
      font-family: 'Muli', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 75px;
+    font-size: 50px;
     text-align: center;
     margin:0;
     color:#222;
@@ -47,16 +42,12 @@ h3 {
 ===============================*/
 .about {
     background:url('../img/background.png');
-    /*background:#CBE4DB;*/
-    /*background:#CBECF8;*/
     height: auto;
     padding: 25px 0 0;
 }
 .about p {
         font-family: 'Muli', 'Helvetica Neue', Helvetica, sans-serif;
         font-size: 20px;
-        text-align: left;
-
 }
 .about h4 {
     font-family: 'Muli', 'Helvetica Neue', Helvetica, sans-serif;
@@ -170,14 +161,5 @@ h3 {
     }
     .about h4 {
         font-size: 1.4375rem;
-    }
-}
-
-@media only screen and (max-width: 960px) and (min-width: 40em) {
-    .hero h1 {
-        font-size:100px;
-    }
-    .hero p {
-        font-size:50px;
     }
 }
