@@ -46,7 +46,7 @@ h3 {
         About Properties
 ===============================*/
 .about {
-    background:url('../img/background2.jpg');
+    background:url('../img/background.png');
     /*background:#CBE4DB;*/
     /*background:#CBECF8;*/
     height: auto;
@@ -113,7 +113,7 @@ h3 {
     display: block;
 }
 .work {
-    background:url(../img/background.png);
+    background:url('../img/background2.jpg');
 }
 .bx-wrapper .bx-viewport {
     background:0;
