@@ -10,3 +10,5 @@ Technology used:
 * [bxSlider](http://bxslider.com/)
 * [Foundation 5](http://foundation.zurb.com/)
 
+© 2014 Gary Zhao
+
