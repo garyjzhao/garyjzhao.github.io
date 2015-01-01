@@ -7,8 +7,9 @@ Technology used:
 * HTML5
 * CSS3
 * Javascript/jQuery
-* [bxSlider](http://bxslider.com/)
 * [Foundation 5](http://foundation.zurb.com/)
+* [bxSlider](http://bxslider.com/)
+* [FitText](http://fittextjs.com/)
 
-© 2014 Gary Zhao
+© 2014-15 Gary Zhao
 
