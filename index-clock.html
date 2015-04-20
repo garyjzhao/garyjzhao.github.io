@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gary Zhao - Front End Web Developer</title>
+  <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background:url(img/wheat-2x.jpg) no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+    .clock {
+      width: 500px;
+      color:#fff;
+      border: 5px solid #fff;
+      font:70px/1 'Questrial', Helvetica, Arial, sans-serif;
+      text-align: center;
+      margin: 260px auto 0;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+      ul li {
+        display: inline;
+      }
+    .point {
+      padding: 0 10px;
+    }
+    #strikethru {
+        border-top: 1px solid black;
+        height: 25px;
+        position: absolute;
+        margin-top: 25px;
+    }
+    #strikethru > p {
+        font-family: 'Muli', 'Helvetica Neue', Helvetica, sans-serif;
+        width: 150px;
+        margin-left: -75px;
+        text-align: center;
+        position: absolute;
+        top: -50%;
+        left: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="clock">
+    <ul>
+      <li id="hours"></li>
+      <li class="point">:</li>
+      <li id="min"></li>
+      <li class="point">:</li>
+      <li id="sec"></li>
+    </ul>
+  </div>
+  <div id="strikethru">
+    <p>&copy; Gary Zhao 2015</p>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var newDate = new Date();
+      newDate.setDate(newDate.getDate());
+      setInterval( function() {
+        // Create a newDate() object and extract the seconds of the current time on the visitor's
+        var seconds = new Date().getSeconds();
+        // Add a leading zero to seconds value
+        $("#sec").html(( seconds < 10 ? "0" : "" ) + seconds);
+        },1000);
+
+      setInterval( function() {
+        // Create a newDate() object and extract the minutes of the current time on the visitor's
+        var minutes = new Date().getMinutes();
+        // Add a leading zero to the minutes value
+        $("#min").html(( minutes < 10 ? "0" : "" ) + minutes);
+          },1000);
+
+      setInterval( function() {
+        // Create a newDate() object and extract the hours of the current time on the visitor's
+        var hours = new Date().getHours() % 12;
+        $("#hours").html(( hours < 10 ? "0" : "" ) + hours);
+          }, 1000);
+    });
+  </script>
+</body>
+</html>
