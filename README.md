@@ -7,9 +7,7 @@ Technology used:
 * HTML5
 * CSS3
 * Javascript/jQuery
-* [Foundation 5](http://foundation.zurb.com/)
-* [bxSlider](http://bxslider.com/)
-* [FitText](http://fittextjs.com/)
+* [Lazy Line Painter](https://github.com/camoconnell/lazy-line-painter)
 
 © 2014-15 Gary Zhao
 
