@@ -1,0 +1,35 @@
+@import 'bourbon/bourbon';
+// $visual_grid: true;
+@import 'neat/neat';
+
+body {
+    background:#FB6964;
+    padding: 0;
+    margin: 0;
+    font-family: 'Varela Round', Helvetica, sans-serif;
+    color:#fff;
+    text-align: center;
+}
+.bigWrapper {
+    @include outer-container;
+    margin-top: 10px;
+}
+.headerWrapper {
+    @include span-columns(4);
+    @include shift(4);
+    border: 5px solid #fff;
+    border-radius:5px;
+    margin-bottom: 100px;
+}
+.button {
+    height: 100px;
+    @include span-columns(4);
+    border: 5px solid #fff;
+    border-radius:5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+    .button p {
+        font-size: 1.5em;
+    }
