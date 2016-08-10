@@ -26,8 +26,14 @@
         var options = {
             bg: '#fff',
             id: 'nanobar'
-        }
+        };
         var nanobar = new Nanobar (options);
+        $(document).ready(function() {
+            nanobar.go(99);
+        });
+        // $(window).load(function() {
+        //     nanobar.go(100);
+        //     });
     </script>
 </body>
 </html>
