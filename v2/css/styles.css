@@ -1,0 +1,29 @@
+.wrapper {
+  max-width: 1008px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.box-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+  .box {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .blueberry {
+      background-color: #6b7a8f;
+    }
+    .apricot {
+      background-color: #f7882f;
+    }
+    .citrus {
+      background-color: #f7c331;
+    }
+    .appleCore {
+      background-color: #dcc7aa;
+    }
