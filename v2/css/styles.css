@@ -19,6 +19,8 @@ font-family: 'Raleway', sans-serif;
   .box {
     height: 100px;
     width: 100px;
+    box-sizing: border-box;
+    border: 1px solid #000;
     display: flex;
     justify-content: center;
     align-items: center;
