@@ -1,3 +1,8 @@
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
+ */
+
 .wrapper {
   max-width: 1008px;
   width: 100%;
@@ -14,6 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Playfair Display', serif;
   }
     .blueberry {
       background-color: #6b7a8f;
@@ -27,3 +33,10 @@
     .appleCore {
       background-color: #dcc7aa;
     }
+
+
+h1 {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 100px;
+}
+
