@@ -3,11 +3,33 @@ font-family: 'Playfair Display', serif;
 font-family: 'Raleway', sans-serif;
  */
 
-.wrapper {
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dcc7aa;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 100px;
+}
+  header:after {
+    background: inherit;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(-1.5deg);
+    transform-origin: 100%;
+    z-index: -1;
+  }
+header > * {
   max-width: 1008px;
   width: 100%;
-  margin: 0 auto;
 }
+
 
 .box-wrapper {
   display: flex;
@@ -16,6 +38,8 @@ font-family: 'Raleway', sans-serif;
   .box {
     height: 100px;
     width: 100px;
+    box-sizing: border-box;
+    border: 1px solid #000;
     display: flex;
     justify-content: center;
     align-items: center;
