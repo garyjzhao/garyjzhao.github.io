@@ -59,27 +59,31 @@ h1, h2, h3, p {
     position: relative;
     overflow: hidden;
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
-    color: white;
+    color: #fff;
+    padding:10px 15px 0;
 }
-    .work:nth-child(1) {
-        /*background-color:#37474F;*/
-        background-color:#81D4FA;
-    }
-    .work:nth-child(2) {
-        background-color:#607D8B;
-    }
-    .work:nth-child(3) {
-        background-color:#005B7D;
-    }
     .work > img {
         max-width: 1080px;
         width: 100%;
         position: absolute;
         bottom: -10%;
     }
-
-/*
-37474F
-283593
-0277BD
-*/
+    .work h3 {
+        font-size: 30px;
+        text-align: center;
+        margin: 25px 0;
+    }
+    .work p {
+        text-align: justify;
+    }
+    .work:nth-child(1) {
+        background-color:#0288D1;
+        /*background-color:#81D4FA;*/
+    }
+    /*.work:nth-child(1) > * {color:#000;}*/
+    .work:nth-child(2) {
+        background-color:#607D8B;
+    }
+    .work:nth-child(3) {
+        background-color:#005B7D;
+    }
