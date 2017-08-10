@@ -17,7 +17,7 @@ h1, h2, h3, p {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-family: 'Dosis', Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
     text-align: center;
     padding:10px 0;
     margin:50px auto 25px;
@@ -33,7 +33,9 @@ h1, h2, h3, p {
     .strikethrough span {
         background: #fefef6;
         font-size: 48px;
+        /*font-family:'Libre Baskerville', serif;*/
         font-family: 'Satisfy', cursive;
+        font-style: italic;
         line-height: 16px;
         padding: 0 10px;
         position: relative;
@@ -42,7 +44,7 @@ h1, h2, h3, p {
     .hero h1 {
         font-size: 40px;
         margin: 25px 0;
-        font-weight: normal;
+        font-weight: bold;
     }
     .hero h2 {
         font-size: 36px;
@@ -52,13 +54,31 @@ h1, h2, h3, p {
         margin: 25px 0 50px;
     }
 
-#work {
-    background-color:#282c35;
-    margin: 10px;
-    padding: 10px;
-}
-#work > div {
+#work > .work {
     height: 500px;
-    margin: 25px 0;
-    background-color:#333;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    color: white;
 }
+    .work:nth-child(1) {
+        background-color:#37474F;
+    }
+    .work:nth-child(2) {
+        background-color:#607D8B;
+    }
+    .work:nth-child(3) {
+        background-color:#005B7D;
+    }
+    .work > img {
+        max-width: 1080px;
+        width: 100%;
+        position: absolute;
+        bottom: -10%;
+    }
+
+/*
+37474F
+283593
+0277BD
+*/
