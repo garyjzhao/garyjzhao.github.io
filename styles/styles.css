@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fefef6;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, p {
@@ -19,7 +20,6 @@ h1, h2, h3, p {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;
     text-align: center;
     padding:10px 0;
     margin:50px auto 25px;
@@ -35,7 +35,6 @@ h1, h2, h3, p {
     .strikethrough span {
         background: #fefef6;
         font-size: 48px;
-        /*font-family:'Libre Baskerville', serif;*/
         font-family: 'Satisfy', cursive;
         font-style: italic;
         line-height: 16px;
@@ -56,19 +55,15 @@ h1, h2, h3, p {
         margin: 25px 0 50px;
     }
 
-.work_container {
-    position: relative;
-}
-    .work_container:nth-child(1) {background-color:#0288D1;}
-    .work_container:nth-child(2) {background-color:#607D8B;}
-    .work_container:nth-child(3) {background-color:#005B7D;}
+.work_container:nth-child(1) {background-color:#0288D1;}
+.work_container:nth-child(2) {background-color:#607D8B;}
+.work_container:nth-child(3) {background-color:#005B7D;}
 
 
 .work {
     max-width: 1080px;
     width: 100%;
     margin: 0 auto;
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;
     color: #fff;
     padding:10px 25px 0;
 }
@@ -93,6 +88,12 @@ h1, h2, h3, p {
         align-items: center;
         margin:25px 0 10px;
     }
+    @media only screen and (min-width: 400px) {
+        .work .button_container {
+            justify-content: space-around;
+            flex-direction: row;
+        }
+    }
     .work .button {
         width: 160px;
         display: block;
@@ -103,3 +104,24 @@ h1, h2, h3, p {
         text-decoration: none;
         margin-bottom: 25px;
     }
+footer {
+    padding: 50px 25px;
+}
+footer .strikethrough span {
+    font-size: 30px;
+}
+footer p,
+footer a {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+footer a {
+    color:#000;
+}
+@media only screen and (min-width: 600px) {
+    footer .strikethrough span {
+        font-size: 46px;
+    }
+
+}
