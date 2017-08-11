@@ -1,47 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Front End Web Developer - Gary Zhao</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <style>
-    body {
-      padding: 0;
-      margin: 0;
-      background: #1fa9ec;
-      background: linear-gradient(#1fa9ec, #0f85b8);
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .box {
-      width: 30vw;
-      height: 30vw;
-      max-width: 390px;
-      max-height: 390px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's get some work done!</title>
 
-      border: 1em solid #fff;
-      border-radius: 75px 0;
-    }
-    h1 {
-      font-family: 'Montserrat', Helvetica, sans-serif;
-      font-size: 4vw;
-      color: #fff;
-    }
-    @media only screen and (min-width: 1280px) {
-      h1 {
-        font-size: 3.5em;
-      }
-    }
-  </style>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Raleway|Satisfy" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <div class="box">
-    <h1>Gary Zhao</h1>
-  </div>
+    <header>
+    </header>
+    <div class="hero">
+        <p class="strikethrough">
+            <span>Hello!</span>
+        </p>
+        <h1>I'm Gary Zhao</h1>
+        <h2>a front-end web deveoper</h2>
+        <p>I really like to make web stuff</p>
+    </div>
+    <div id="work">
+        <div class="work_container">
+            <div class="work" id="ussf">
+                <h3>USS Foundation</h3>
+                <p>Completely revamped the company's charity website with new design to be more appealing and welcoming and with modern and semantic code to streamline future updates</p>
+                <div class="button_container">
+                    <a class="button" href="https://github.com/garyjzhao/USSF" target="_blank">Sample Code</a>
+                    <a class="button" href="http://www.ussfoundation.org" target="_blank">Visit Website</a>
+                </div>
+                <img src="img/ussf.png" alt="Screenshot of my work -- USS Foundation">
+            </div>
+        </div>
+        <div class="work_container">
+            <div class="work" id="uss">
+                <h3>USS Corporate Site</h3>
+                <p>Wordpress-based website that housed client's 50+ products. My responsibilities were to create landing pages for new products, to update existing products, and to perform updates and maintain website uptime.</p>
+                <div class="button_container">
+                    <a class="button" href="http://www.universaleas.com" target="_blank">Visit Website</a>
+                </div>
+                <img src="img/uss.png" alt="Screenshot of my work -- USS">
+            </div>
+        </div>
+        <div class="work_container">
+            <div class="work" id="kevin">
+                <h3>KVNCRSN</h3>
+                <p>A single-page portfolio website built for client to display his work and to easily update without any web development knowledge</p>
+                <div class="button_container">
+                    <a class="button" href="http://www.kvncrsn.com" target="_blank">Visit Website</a>
+                </div>
+                <img src="img/kvncrsn.png" alt="Screenshot of my work -- Kevin Caron's personal portfolio">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="strikethrough">
+            <span>Thanks for visiting</span>
+        </p>
+        <p>&copy; 2017 Gary Zhao</p>
+        <a href="https://github.com/garyjzhao/" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/garyjzhao/" target="_blank">LinkedIn</a>
+    </footer>
 </body>
 </html>
