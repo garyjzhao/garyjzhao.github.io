@@ -73,6 +73,10 @@ h1, h2, h3, p {
 
 .work_container:nth-child(1) {background-color:#0288D1;}
 .work_container:nth-child(2) {background-color:#607D8B;}
+@media only screen and (min-width:900px) {
+    .work_container:nth-child(2) .work > div {order:2;}
+    .work_container:nth-child(2) .work > img {order:1;}
+}
 .work_container:nth-child(3) {background-color:#005B7D;}
 
 
@@ -82,6 +86,12 @@ h1, h2, h3, p {
     margin: 0 auto;
     color: #fff;
     padding:10px 25px 25px;
+}
+@media only screen and (min-width:900px) {
+    .work {
+        display: flex;
+        padding: 50px 25px;
+    }
 }
     .work h3 {
         font-size: 30px;
@@ -94,8 +104,14 @@ h1, h2, h3, p {
     .work > img {
         max-width: 900px;
         width: 100%;
-        display: block;
+        /*display: block;*/
         margin: 0 auto;
+    }
+    @media only screen and (min-width:900px) {
+        .work > img {
+            max-width: 500px;
+            height: 100%
+        }
     }
     .work .button_container {
         display: flex;
