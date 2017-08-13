@@ -1,5 +1,7 @@
-# Gary Zhao's portfolio website
+# Gary Zhao -- Front End Web Developer
 
-Placeholder index page for my [portfolio website](http://www.garyzhao.com) until I get time and/or inspired.
+My name is Gary Zhao. I am a Front End Web Developer and I love to make anything for the web.
+
+Here you can review the code of my [online portfolio](http://www.garyzhao.com).
 
 © 2014-17 Gary Zhao
