@@ -42,33 +42,40 @@ p {
 
 .intro {
     background: #D75151;
+}
+.intro-wrapper {
+    max-width: 1340px;
+    margin: 0 auto;
     padding:60px 40px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
 }
     @media (min-width: 650px) {
-        .intro {
+        .intro-wrapper {
             padding: 60px 100px;
             flex-direction: row;
         }
     }
 
-.description {
-    background: #59aad3;
+.description {background: #59aad3;}
+.description-wrapper {
+    max-width: 1340px;
+    margin: 0 auto;
     padding: 46px 40px;
 }
     @media (min-width: 650px) {
-        .description {
+        .description-wrapper {
             padding: 60px 100px;
         }
     }
 
     .skill-bars {
         display: grid;
-        grid-template-columns: 75px 1fr;
-        grid-column-gap: 15px;
+        grid-template-columns: 120px 1fr;
+        grid-column-gap: 20px;
+        text-transform: uppercase;
     }
         .skill-bars ul {
             list-style:none;
@@ -81,13 +88,21 @@ p {
 
         .skill-bar li {
             background:#fff;
+            border-radius: 7px;
+            /*color:#000;*/
         }
         .skill-bars li[data-years='5'] {
             width:100%;
+        }
+        .skill-bars li[data-years='4'] {
+            width:80%;
         }
         .skill-bars li[data-years='3'] {
             width:60%;
         }
         .skill-bars li[data-years='2'] {
             width:40%;
+        }
+        .skill-bars li[data-years='1'] {
+            width:20%;
         }
