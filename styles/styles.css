@@ -72,37 +72,36 @@ p {
     }
 
     .skill-bars {
-        display: grid;
-        grid-template-columns: 120px 1fr;
-        grid-column-gap: 20px;
         text-transform: uppercase;
+        /*columns: 2;*/
     }
-        .skill-bars ul {
-            list-style:none;
-        }
-        .skill-bars li {
+
+        .skill-bars > div {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            grid-column-gap: 20px;
+
             margin-top: 24px;
             font-size: 20px;
             font-weight: bold;
         }
 
-        .skill-bar li {
+        .skill-bar {
             background:#fff;
             border-radius: 7px;
-            /*color:#000;*/
         }
-        .skill-bars li[data-years='5'] {
+        .skill-bar[data-years='5'] {
             width:100%;
         }
-        .skill-bars li[data-years='4'] {
+        .skill-bar[data-years='4'] {
             width:80%;
         }
-        .skill-bars li[data-years='3'] {
+        .skill-bar[data-years='3'] {
             width:60%;
         }
-        .skill-bars li[data-years='2'] {
+        .skill-bar[data-years='2'] {
             width:40%;
         }
-        .skill-bars li[data-years='1'] {
+        .skill-bar[data-years='1'] {
             width:20%;
         }
