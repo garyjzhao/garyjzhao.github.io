@@ -74,22 +74,26 @@ p {
             font-size: 20px;
             font-weight: bold;
             display: flex;
+            justify-content: flex-start;
         }
         .skill-title {
-            flex:1 100px;
+            flex: 0 1 25%;
         }
         .skill-bar {
             display: inline-block;
             background:#fff;
             height: 23px;
-            width:100px;
+            flex: 0 1 75%;
+            /*width:100px;*/
         }
         .skill-bars span[data-years='5'] {
-            width:100%;
+            /*width:100%;*/
         }
         .skill-bars span[data-years='3'] {
-            width:60%;
+            /*width:60%;*/
+            flex:0 1 50%;
         }
         .skill-bars span[data-years='2'] {
-            width:40%;
+            /*width:40%;*/
+            flex: 0 1 30%;
         }
