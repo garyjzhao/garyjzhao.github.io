@@ -67,7 +67,7 @@ p {
 }
     @media (min-width: 650px) {
         .description-wrapper {
-            padding: 60px 100px;
+            padding: 60px 100px 100px;
         }
     }
     @media (min-width:880px) {
@@ -120,58 +120,76 @@ p {
             width:20%;
         }
 
-.work-wrapper {
+.work-item-wrapper {
+    display:flex;
+    flex-direction: column;
     max-width: 1340px;
     margin: 0 auto;
     padding: 46px 40px;
 }
-    @media (min-width: 650px) {
-        .work-wrapper {
+    @media (min-width: 769px) {
+        .work-item-wrapper {
+            flex-direction:row;
             padding: 60px 100px;
         }
     }
-    .work-wrapper h4,
-    .work-wrapper p {
-        color:#404040;
-    }
-
-
-    .work-item {
-        display: flex;
-        /*margin-bottom: 100px;*/
-    }
+        .work-item {
+            background:#fcfcfc;
+        }
         .work-item .copy {
             flex: 0 1 50%;
         }
         .work-item .copy h4 {
+            color:#404040;
             font-size: 30px;
         }
         .work-item .copy p {
+            color:#404040;
             font-size: 16px;
             line-height: 28px;
         }
         .work-item .button {
-            background:#59aad3;
+            background:#d75151;
             font-size: 24px;
             letter-spacing: 1px;
         }
         .work-item img {
             width:100%;
-            position: relative;
-            top: -100px;
+            /*margin-top: -100px;*/
         }
 
-        /* Styles for every even work-item */
-        .work-item:nth-child(even) {
-            background:#fcfcfc;
-            padding-top: 150px;
+        /* Styles for every odd work-item */
+        .work-item:nth-child(odd) {
+            background:#fff;
         }
-        .work-item:nth-child(even) .copy {
-            order:2;
+        .work-item:nth-child(odd) .button {
+            background:#59aad3;
         }
-        .work-item:nth-child(even) .image {
-            order:1;
+        @media (min-width: 769px) {
+            .work-item:nth-child(odd) .copy {
+                order:1;
+            }
+            .work-item:nth-child(odd) .image {
+                order:2;
+            }
+            .work-item:nth-child(1) img {
+                margin-top: -100px;
+            }
+            .work-item:not(:first-child) {
+                padding-top: 110px;
+            }
         }
-        .work-item:nth-child(even) .button {
-            background:#d75151;
+
+footer {
+    background: #59aad3;
+}
+    footer .wrapper {
+        max-width: 1340px;
+        margin: 0 auto;
+        padding: 46px 40px;
+    }
+    @media (min-width: 769px) {
+        footer .wrapper {
+            padding: 60px 100px;
         }
+    }
