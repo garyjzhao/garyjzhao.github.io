@@ -30,8 +30,6 @@ p {
         color:#d75151;
         font-size: 48px;
         font-weight: bold;
-        text-transform: capitalize;
-
         margin-top: 60px;
     }
         @media (min-width: 650px) {
@@ -117,11 +115,6 @@ p {
                 padding-left: 25px;
             }
         }
-        /*@media (max-width: 1024px) {
-            .skill-bar {
-                padding-left: 25px;
-            }
-        }*/
         .skill-bar[data-years='5'] {
             width:100%;
         }
@@ -157,7 +150,6 @@ p {
         .work-item .copy {
             flex: 0 1 50%;
             text-align: center;
-            /*margin-left: 35px;*/
         }
         @media (min-width: 769px) {
             .work-item .copy {
@@ -197,7 +189,6 @@ p {
             display: block;
             margin: 0 auto 25px;
             box-shadow: 0 2px 17px rgba(0,0,0,0.15);
-            /*margin-bottom: 25px;*/
         }
 
         /* Styles for every odd work-item */
