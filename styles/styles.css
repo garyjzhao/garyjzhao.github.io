@@ -182,9 +182,10 @@ p {
         }
         .work-item .button {
             background:#59aad3;
-            /*background:#d75151;*/
-            font-size: 24px;
+            font-size: 18px;
             letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 10px;
         }
         .work-item .image {
         }
