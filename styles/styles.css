@@ -19,6 +19,16 @@ h3 {
 p {
     margin: 24px 0;
 }
+h4 {
+    color:#404040;
+    font-size: 30px;
+}
+h5 {
+    font-size: 28px;
+    font-family: 'Lobster Two', cursive;
+    color:#d75151;
+    margin-top: 15px;
+}
 
 .button {
     border-radius: 7px;
@@ -156,10 +166,6 @@ p {
                 text-align: left;
                 margin-left: 35px;
             }
-        }
-        .work-item .copy h4 {
-            color:#404040;
-            font-size: 30px;
         }
         .work-item .copy p {
             color:#404040;
