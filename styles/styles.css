@@ -188,11 +188,16 @@ p {
             margin-bottom: 10px;
         }
         .work-item .image {
+            display: flex;
+            align-items: center;
         }
         .work-item img {
+            max-width: 500px;
             width:100%;
+            display: block;
+            margin: 0 auto 25px;
             box-shadow: 0 2px 17px rgba(0,0,0,0.15);
-            margin-bottom: 25px;
+            /*margin-bottom: 25px;*/
         }
 
         /* Styles for every odd work-item */
@@ -206,6 +211,9 @@ p {
             }
             .work-item:nth-child(odd) .image {
                 order:2;
+            }
+            .work-item img {
+                /*max-width: 500px;*/
             }
         }
         @media (min-width: 1000px) {
