@@ -31,6 +31,13 @@ section {
     height: auto;
     width: 100%; }
 
+.sectionThree {
+  max-width: 600px;
+  margin: 0 auto; }
+  .sectionThree img {
+    height: auto;
+    width: 100%; }
+
 @media (min-width: 769px) {
   body {
     flex-direction: row; }
