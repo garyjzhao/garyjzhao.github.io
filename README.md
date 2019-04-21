@@ -1,7 +1,20 @@
 # Gary Zhao -- Front End Web Developer
 
-My name is Gary Zhao. I am a front end web developer and I love to make anything for the web.
+Personal portfolio website
 
-Here you can review the code of my [online portfolio](http://www.garyzhao.com).
+## Ideas
+* Big "GARY ZHAO" with [Nunito Sans](https://fonts.google.com/specimen/Nunito+Sans) font.
+* Body background => #f5f5f5
+* Gatsby
 
-© 2019 Gary Zhao
+
+
+
+
+
+
+
+## Inspiration
+* [Kyle Decker](https://kyledecker.me/)
+* [Kit Warchol](http://www.kitwarchol.com/about)
+* [Mike Kus](https://www.mikekus.com/)
