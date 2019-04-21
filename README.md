@@ -4,4 +4,4 @@ My name is Gary Zhao. I am a front end web developer and I love to make anything
 
 Here you can review the code of my [online portfolio](http://www.garyzhao.com).
 
-© 2018 Gary Zhao
+© 2019 Gary Zhao
