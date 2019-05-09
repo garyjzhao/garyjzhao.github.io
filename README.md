@@ -7,14 +7,9 @@ Personal portfolio website
 * Body background => #f5f5f5
 * Gatsby
 
-
-
-
-
-
-
-
 ## Inspiration
 * [Kyle Decker](https://kyledecker.me/)
 * [Kit Warchol](http://www.kitwarchol.com/about)
 * [Mike Kus](https://www.mikekus.com/)
+* [huemor](https://huemor.rocks/)
+* [toi.io](https://toi.io/)
