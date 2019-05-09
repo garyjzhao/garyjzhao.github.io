@@ -13,4 +13,5 @@ Personal portfolio website
 * [Mike Kus](https://www.mikekus.com/)
 * [huemor](https://huemor.rocks/)
 * [toi.io](https://toi.io/)
-* (Andrew Borstein)[https://andrewborstein.com/]
+* [Andrew Borstein](https://andrewborstein.com/)
+* [Kyle Ledbetter](http://kyleledbetter.com/)
