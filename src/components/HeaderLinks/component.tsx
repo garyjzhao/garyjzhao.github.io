@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby";
 import { HeaderLinksProps } from "./index";
 import { StyledUl, StyledLinks } from "./styles";
 
-const HeaderLinks: React.FC = () => (
+export const HeaderLinks: React.FC = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -35,5 +35,3 @@ const HeaderLinks: React.FC = () => (
     )}
   />
 );
-
-export default HeaderLinks;
