@@ -2,7 +2,7 @@ import * as React from "react";
 import styled from "@emotion/styled";
 import { transparentize } from "polished";
 import { Link } from "gatsby";
-import HeaderLinks from "./HeadLinks";
+import { HeaderLinks } from "./HeaderLinks/index";
 
 import { heights, dimensions, colors } from "../styles/variables";
 
