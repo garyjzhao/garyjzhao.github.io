@@ -1,62 +1,70 @@
 import React from 'react'
 import styled from 'styled-components'
-
-import { tablet, desktop } from '../common/utils/Breakpoints'
 import { Green } from '../common/utils/Colors'
-import GridWrapper from '../common/GridWrapper'
 
-const StyledHeader = styled.header`
-  height: 300px;
-  position: relative;
-  display: grid;
-`
-const SkewedDiv = styled.div`
-  position: absolute;
-  top: -50px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
+
+const HeaderBackground = styled.header`
   width: 100%;
-  transform: skewY(-3deg);
-  background: ${Green}
+  height: 700px;
+  background-color: ${Green};
+  display: grid;
+  grid-template-columns: auto [content] 960px auto;
+
+  & > * {
+    grid-column: content;
+  }
 `
 
-const Name = styled.h1`
-  place-self: center;
-  margin: 0;
-  font-family: 'Luckiest Guy', Verdana, Arial, sans-serif;
-  font-size: 80px;
-  grid-column: 1 / end;
-  text-align: center;
-
-  @media (min-width: ${tablet}) {
-    grid-column: 6 / span 6;
-  }
-
-  @media (min-width: ${desktop}) {
-    font-size: 120px;
-  }
-
-  `
-
-const Title = styled.h2`
-  @media (max-width: ${tablet}) {
-    grid-column: 5 / span 5;
-  }
-  grid-column: 8 / span 5
+const GridWrapper = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
 `
 
+const Navigation = styled.ul`
+  grid-column: 5 / -1;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 67px 0 137px;
+
+  & > li {
+    text-transform: uppercase;
+  }
+`
+
+const H1 = styled.h1`
+  grid-column: 5 / -1;
+`
 
 const Header = () => {
   return (
-    <StyledHeader>
-      <SkewedDiv />
+    <HeaderBackground>
       <GridWrapper>
-        <Name>Gary Zhao</Name>
-        <Title>Product Engineer</Title>
+        <Navigation>
+            <li>
+              <a href="#">
+                Skills.
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Experience.
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Personal Interest.
+              </a>
+            </li>
+        </Navigation>
+        <H1>
+          Hello World
+        </H1>
       </GridWrapper>
-    </StyledHeader>
+    </HeaderBackground>
   )
 }
 
