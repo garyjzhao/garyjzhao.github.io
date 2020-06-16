@@ -1,3 +1,3 @@
-export const Green = '#93A97E'
-export const Black = '#000'
-export const White = '#fff'
+export const GREEN = '#93A97E'
+export const BLACK = '#000'
+export const WHITE = '#fff'

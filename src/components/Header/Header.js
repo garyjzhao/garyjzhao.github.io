@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Green } from '../common/utils/Colors'
+import { GREEN, BLACK, WHITE } from '../common/utils/Colors'
 
 
 const HeaderBackground = styled.header`
   width: 100%;
   height: 700px;
-  background-color: ${Green};
+  background-color: ${ GREEN };
   display: grid;
   grid-template-columns: auto [content] 960px auto;
 
@@ -32,6 +32,10 @@ const Navigation = styled.ul`
 
   & > li {
     text-transform: uppercase;
+  }
+
+  & a {
+    color: ${ BLACK }
   }
 `
 
