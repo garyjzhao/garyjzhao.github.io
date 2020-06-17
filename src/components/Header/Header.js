@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
+
+import portrait from '../common/images/portrait.png'
 import { GridWrapper } from '../common/utils/GridWrapper'
 import { GREEN, BLACK, WHITE, BASIC, FANCY } from '../common/utils/Constants'
 
 
 const HeaderBackground = styled.header`
   width: 100%;
-  height: 700px;
   background-color: ${ GREEN };
   display: grid;
   grid-template-columns: auto [content] 960px auto;
@@ -16,8 +17,18 @@ const HeaderBackground = styled.header`
   }
 `
 
+const ImageDiv = styled.div`
+  grid-column: span 6;
+  display: flex;
+  align-items: flex-end;
+  & img {
+    width: 100%;
+  }
+`
+
 const ContentDiv = styled.div`
-  grid-column: 6 / -1;
+  grid-column: span 6;
+  padding: 60px 0;
 `
 
 const Navigation = styled.ul`
@@ -25,13 +36,14 @@ const Navigation = styled.ul`
   justify-content: space-between;
   list-style: none;
   padding: 0;
-  margin: 67px 0 137px; //TODO: change this in the future
+  margin-bottom: 128px;
 
   & > li {
     text-transform: uppercase;
   }
 
   & a {
+    font-family: ${ FANCY };
     color: ${ BLACK };
     text-decoration: none;
   }
@@ -59,6 +71,7 @@ const Introduction = styled.div`
 const Name = styled.h1`
   font-family: ${ FANCY };
   font-size: 72px;
+  text-transform: uppercase;
   margin: 0;
 `
 
@@ -67,9 +80,9 @@ const Header = () => {
   return (
     <HeaderBackground>
       <GridWrapper>
-        <div>
-          <img src="https://via.placeholder.com/150x700" alt="placeholder"/>
-        </div>
+        <ImageDiv>
+          <img src={portrait} alt="placeholder"/>
+        </ImageDiv>
         <ContentDiv>
           <Navigation>
             <li>
