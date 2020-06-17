@@ -15,8 +15,12 @@ const HeaderBackground = styled.header`
     grid-column: content;
   }
 `
+
+const ContentDiv = styled.div`
+  grid-column: 6 / -1;
+`
+
 const Navigation = styled.ul`
-  /* grid-column: 6 / -1; */
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -33,13 +37,7 @@ const Navigation = styled.ul`
   }
 `
 
-const ContentDiv = styled.div`
-  grid-column: 6 / -1;
-`
 
-const H1 = styled.h1`
-  /* grid-column: 6 / -1; */
-`
 
 const Header = () => {
   return (
@@ -49,7 +47,27 @@ const Header = () => {
           <img src="https://via.placeholder.com/150x700" alt="placeholder"/>
         </div>
         <ContentDiv>
-          <h1>test</h1>
+          <Navigation>
+            <li>
+              <a href="#">
+                Skills.
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Experience.
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Personal Interests.
+              </a>
+            </li>
+          </Navigation>
+          <h1>Gary Zhao</h1>
+          <h2>Front End Web Developer</h2>
+          <p>I am a web developer who loves crafting code into beautiful experiences on the web. I work tightly with designers, project managers, and clients to transform their ideas into fully functional web experiences HTML, CSS, and JS are my bread and butter, but I am not afraid to dive into new and exciting technologies.</p>
+
         </ContentDiv>
       </GridWrapper>
     </HeaderBackground>
