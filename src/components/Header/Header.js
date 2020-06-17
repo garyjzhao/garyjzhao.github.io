@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { GridWrapper } from '../common/utils/GridWrapper'
 import { GREEN, BLACK, WHITE } from '../common/utils/Colors'
 
 
@@ -14,59 +15,42 @@ const HeaderBackground = styled.header`
     grid-column: content;
   }
 `
-
-const GridWrapper = styled.div`
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 20px;
-`
-
 const Navigation = styled.ul`
-  grid-column: 5 / -1;
+  /* grid-column: 6 / -1; */
   display: flex;
   justify-content: space-between;
   list-style: none;
   padding: 0;
-  margin: 67px 0 137px;
+  margin: 67px 0 137px; //TODO: change this in the future
 
   & > li {
     text-transform: uppercase;
   }
 
   & a {
-    color: ${ BLACK }
+    color: ${ BLACK };
+    text-decoration: none;
   }
 `
 
+const ContentDiv = styled.div`
+  grid-column: 6 / -1;
+`
+
 const H1 = styled.h1`
-  grid-column: 5 / -1;
+  /* grid-column: 6 / -1; */
 `
 
 const Header = () => {
   return (
     <HeaderBackground>
       <GridWrapper>
-        <Navigation>
-            <li>
-              <a href="#">
-                Skills.
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Experience.
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Personal Interest.
-              </a>
-            </li>
-        </Navigation>
-        <H1>
-          Hello World
-        </H1>
+        <div>
+          <img src="https://via.placeholder.com/150x700" alt="placeholder"/>
+        </div>
+        <ContentDiv>
+          <h1>test</h1>
+        </ContentDiv>
       </GridWrapper>
     </HeaderBackground>
   )
