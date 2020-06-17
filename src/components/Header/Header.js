@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { GridWrapper } from '../common/utils/GridWrapper'
-import { GREEN, BLACK, WHITE } from '../common/utils/Colors'
+import { GREEN, BLACK, WHITE, BASIC, FANCY } from '../common/utils/Constants'
 
 
 const HeaderBackground = styled.header`
@@ -41,13 +41,14 @@ const Button = styled.button`
   border-radius: 8px;
   background-color: ${ WHITE};
   padding: 16px 24px;
+  font-family: ${ FANCY };
   text-transform: uppercase;
   margin-right: 20px;
 `
 
 const Introduction = styled.div`
   p, h2 {
-    font-family: 'Quicksand', Helvetica, sans-serif;
+    font-family: ${ BASIC };
     font-size: 32px;
     font-weight: 400;
     margin: 0;
@@ -56,7 +57,7 @@ const Introduction = styled.div`
 `
 
 const Name = styled.h1`
-  font-family: 'Hammersmith One', sans-serif;
+  font-family: ${ FANCY };
   font-size: 72px;
   margin: 0;
 `
