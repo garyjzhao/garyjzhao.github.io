@@ -36,7 +36,30 @@ const Navigation = styled.ul`
     text-decoration: none;
   }
 `
+const Button = styled.button`
+  border: 3px solid ${ BLACK };
+  border-radius: 8px;
+  background-color: ${ WHITE};
+  padding: 16px 24px;
+  text-transform: uppercase;
+  margin-right: 20px;
+`
 
+const Introduction = styled.div`
+  p, h2 {
+    font-family: 'Quicksand', Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0;
+  }
+
+`
+
+const Name = styled.h1`
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 72px;
+  margin: 0;
+`
 
 
 const Header = () => {
@@ -64,10 +87,20 @@ const Header = () => {
               </a>
             </li>
           </Navigation>
-          <h1>Gary Zhao</h1>
-          <h2>Front End Web Developer</h2>
-          <p>I am a web developer who loves crafting code into beautiful experiences on the web. I work tightly with designers, project managers, and clients to transform their ideas into fully functional web experiences HTML, CSS, and JS are my bread and butter, but I am not afraid to dive into new and exciting technologies.</p>
-
+          <div>
+            <Introduction>
+              <p>Hi, I am </p>
+              <Name>Gary Zhao</Name>
+              <h2>Front End Web Developer</h2>
+            </Introduction>
+            <p>I am a web developer who loves crafting code into beautiful experiences on the web. I work tightly with designers, project managers, and clients to transform their ideas into fully functional web experiences HTML, CSS, and JS are my bread and butter, but I am not afraid to dive into new and exciting technologies.</p>
+            <Button>
+              Download Resume
+          </Button>
+            <Button>
+              Email Me
+          </Button>
+          </div>
         </ContentDiv>
       </GridWrapper>
     </HeaderBackground>
